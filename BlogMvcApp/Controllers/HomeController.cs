@@ -9,12 +9,12 @@ namespace BlogMvcApp.Controllers
 {
     public class HomeController : Controller
     {
-        private BlogContext Context = new BlogContext();
+        private BlogContext context = new BlogContext();
     
         // GET: Home
         public ActionResult Index()
         {
-            return View(Context.Bloglar.ToList());
+            return View(context.Bloglar.ToList());
         }
     }
 }
