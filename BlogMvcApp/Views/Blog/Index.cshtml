@@ -31,7 +31,7 @@
         <th>
             @Html.DisplayNameFor(model => model.Anasayfa)
         </th>
-        <th style="width:225px"></th>
+        <th style="width:205px"></th>
     </tr>
     
 @foreach (var item in Model) {
@@ -69,9 +69,9 @@
             }
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new{ @class="btn btn-warning btn-xs"} )
-            @Html.ActionLink("Details", "Details", new { id=item.Id }, new { @class = "btn btn-primary btn-xs" })
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id }, new { @class = "btn btn-danger btn-xs" })
+            @Html.ActionLink("Düzenle", "Edit", new { id = item.Id }, new{ @class="btn btn-warning btn-sm"} )
+            @Html.ActionLink("Detaylar", "Details", new { id=item.Id }, new { @class = "btn btn-primary btn-sm" })
+            @Html.ActionLink("Sil", "Delete", new { id=item.Id }, new { @class = "btn btn-danger btn-sm" })
         </td>
     </tr>
 }
